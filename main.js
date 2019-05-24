@@ -69,10 +69,10 @@
         position: absolute;
         z-index: 2;
         top: 76px;
-        left: 8px;
+        left: 7px;
         height: 123px;
-        width: 230px;
-        border: medium none;
+        width: 231px;
+        border: none;
     }
     
     /* 现在画耳朵
