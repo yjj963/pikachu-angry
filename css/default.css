@@ -1,0 +1,111 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+*::after{
+  box-sizing: border-box;
+}
+*::before{
+  box-sizing: border-box;
+}
+*{
+  transition: all 0.3s;
+}
+/* LIGHT */
+
+@keyframes light {
+  0% { opacity: 0; }
+  5% { opacity: 1;}
+  10% { opacity: 0; }
+  15% { opacity: 1;}
+  20% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.code-wrapper{
+  flex:1;
+  height: 50%;
+  padding: 10px;
+}
+#code{
+  overflow: hidden;
+  height: 100%;
+}
+.preview-wrapper{
+  flex: 1;
+  height: 50%;
+}
+.preview{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper{
+  width: 100%;
+  height: 165px;
+  position: relative;
+}
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 240px;
+  height: 325px;
+}
+/*所有圆形的部位*/
+.head-down , 
+.head-middle , 
+.eye ,
+.iris , 
+.cheek , 
+.tongue {
+  border-radius: 50%;
+}
+.hold-head {
+  position: relative;
+  height: 200px;
+}
+.hold-face {
+  position: absolute;
+  z-index: 3;
+  height: 222px;
+  width: 238px;    
+}
+.nose {
+  position: absolute;
+  top: 125px;
+  left: 111px;
+  width: 17px;
+  height: 15px;
+}
+.hold-nose-bottom {
+  position: absolute;
+  top: 1px;
+  z-index: 1;
+  height: 10px;	
+  width: 17px;
+  overflow: hidden;
+}
+.actions{
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+.actions>button{
+  margin: 10px;
+  background: #ddd;
+  padding: 8px 10px;
+  border: none;
+}
+.actions>button.active{
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+}
+.actions>button:focus{
+  outline: none;
+}
+
+
